@@ -7,7 +7,6 @@ El metodo que genera la suma debe verificar que los dos sean numeros sean positi
 deber ser la suma 0
  */
 package ejemplo03;
-import ejemplos01.*;
 import java.util.Scanner;
 
 /**
