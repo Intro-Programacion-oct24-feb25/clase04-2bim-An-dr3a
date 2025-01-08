@@ -17,14 +17,18 @@ public class Ejemplo01 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        // String ciudad = "Loja";
+        //String ciudad = "Loja";
         // String miCiudad = obtenerCiudadMayuscula(ciudad);
         // System.out.printf("%s\n", miCiudad);
         obtenerMultiplicacion(7, 50);
         // 
         
-        String miMensaje = obtenerMultiplicacionDos(7, 50);
-        System.out.printf("%s\n", miMensaje);
+        //String miMensaje = obtenerMultiplicacionDos(7, 50);
+        //System.out.printf("%s\n", miMensaje);
+        
+        String ciudad = "Loja";
+        String ciudad2 = obtenerCiudadMayuscula(ciudad);
+        System.out.printf("%s\n", ciudad2);
     }
     
     
