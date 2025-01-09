@@ -15,30 +15,49 @@ public class Ejemplo11 {
         // 
         String mensajeSuma;
         String mensajeSumaDos;
+        String mensajeSumaTres;
         mensajeSuma = repetirNombre(10, "Antonio Valencia");
         mensajeSumaDos = repetirNombre("José Gavíca", 10);
-        
+        int[] arreglo = {10, 2};
+        mensajeSumaTres = repetirNombre(10, "Jose Gavica");
+
         System.out.printf("%s\n", mensajeSuma);
         System.out.printf("%s\n", mensajeSumaDos);
+        System.out.printf("%s\n", mensajeSumaTres);
     }
-        
-    public static String repetirNombre(int numero, String nombre){
+
+    public static String repetirNombre(String nombre, int[] arreglo2) {
+        int suma = 0;
+        String cadena = "";
+        for (int i = 0; i <= arreglo2.length; i++) {
+            suma = suma + arreglo2[i];
+        }
+
+        for (int i = 1; i  <= suma ; i++) {
+            cadena = String.format("%s%s\n", cadena, nombre);
+        }
+        return cadena;
+
+    }
+
+    public static String repetirNombre(int par, String nombre) {
+        int suma;
+        String cadena = "";
+        int numero = 0;
+        for (int i = 1; i <= numero; i++) {
+            cadena = String.format("%s%s\n", cadena, nombre);
+        }
+
+        return cadena;
+    }
+
+    public static String repetirNombre(String nombre, int numero) {
         int suma;
         String cadena = "";
         for (int i = 1; i <= numero; i++) {
             cadena = String.format("%s%s\n", cadena, nombre);
         }
-        
-        return cadena;        
-    }
-    
-    public static String repetirNombre(String nombre, int numero){
-        int suma;
-        String cadena = "";
-        for (int i = 1; i <= numero; i++) {
-            cadena = String.format("%s%s\n", cadena, nombre);
-        }
-        
-        return cadena;        
+
+        return cadena;
     }
 }
